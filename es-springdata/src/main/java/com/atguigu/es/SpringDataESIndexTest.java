@@ -1,5 +1,6 @@
 package com.atguigu.es;
 
+import org.elasticsearch.client.RestHighLevelClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SpringDataESIndexTest {
     @Autowired
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
+
+    @Autowired
+    private RestHighLevelClient restHighLevelClient;
 
     //创建索引并增加映射配置
     @Test

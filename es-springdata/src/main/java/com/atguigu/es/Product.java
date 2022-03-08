@@ -37,5 +37,5 @@ public class Product {
     @Field(type = FieldType.Double)
     private Double price;//商品价格
     @Field(type = FieldType.Keyword, index = false)
-    private String images;//图片地址
+    private String images;//图片地址 不建立索引，默认建立索引
 }
