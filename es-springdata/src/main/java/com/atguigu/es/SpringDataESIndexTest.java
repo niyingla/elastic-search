@@ -11,9 +11,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringDataESIndexTest {
+    /**
+     * 类似jpa 操作
+     */
     @Autowired
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
 
+    /**
+     * 客户端操作
+     */
     @Autowired
     private RestHighLevelClient restHighLevelClient;
 
